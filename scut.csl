@@ -20,7 +20,7 @@
 </info>
 <locale xml:lang="en">
 <terms>
-<term name="et-al">et al</term>
+<term name="et-al" >et al.</term>
 <term name="editor" form="short">ed</term>
 </terms>
 </locale>
@@ -42,13 +42,13 @@
 </substitute>
 </names>
 </macro>
-<macro name="title">
+<macro name="title" >
 <choose>
 <if type="bill book graphic legal_case legislation motion_picture report song thesis" match="any">
 <text variable="title" font-style="italic"/>
 </if>
 <else>
-<text variable="title" suffix="[J]."/>
+  <text variable="title"  suffix="[J]."/>
 </else>
 </choose>
 </macro>
@@ -78,7 +78,7 @@
 <text variable="citation-number"/>
 </layout>
 </citation>
-<bibliography second-field-align="flush" et-al-min="4" et-al-use-first="3">
+<bibliography second-field-align="flush" et-al-min="3" et-al-use-first="3">
 <layout>
 <text variable="citation-number" prefix="[" suffix="]"/>
 <group delimiter=" " prefix=" ">
