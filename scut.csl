@@ -1,17 +1,21 @@
 
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" page-range-format="minimal" default-locale="en-US">
 <info>
-<title>scut</title>
+<title>Institute of Physics (numeric) - ze fang</title>
 <title-short>IOP</title-short>
-<id>http://csl.mendeley.com/styles/740343951/fz-4-9</id>
-<link href="https://github.com/kofplasma/csl/blob/main/scut.csl" rel="self"/>
+<id>http://csl.mendeley.com/styles/740343951/fz-4-6-1</id>
+<link href="http://www.zotero.org/styles/institute-of-physics-numeric" rel="self"/>
 <link href="http://authors.iop.org/atom/help.nsf/7765E7F03B07DE5080257020002E4D9B/$File/IOPWordGuidelines.pdf" rel="documentation"/>
 <author>
 <name>Sebastian Karcher</name>
 </author>
+<contributor>
+<name>ze fang</name>
+<uri/>
+</contributor>
 <category citation-format="numeric"/>
 <category field="physics"/>
-<updated>2024-04-05T13:54:31+00:00</updated>
+<updated>2024-04-06T07:32:13+00:00</updated>
 <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
 </info>
 <locale xml:lang="en">
@@ -30,8 +34,8 @@
 <text term="anonymous" form="short" text-case="capitalize-first" strip-periods="true"/>
 </macro>
 <macro name="author">
-<names variable="author">
-<name delimiter-precedes-et-al="always" delimiter-precedes-last="always" et-al-min="3" initialize-with="." name-as-sort-order="all" sort-separator=" "/>
+<names variable="author" suffix=", et al.">
+<name delimiter-precedes-et-al="always" delimiter-precedes-last="always" et-al-min="1" et-al-use-first="3" initialize-with="." name-as-sort-order="all" sort-separator=" "/>
 <substitute>
 <names variable="editor"/>
 <text macro="anon"/>
@@ -44,7 +48,7 @@
 <text variable="title" font-style="italic"/>
 </if>
 <else>
-<text variable="title" suffix=". "/>
+<text variable="title" suffix="[J]."/>
 </else>
 </choose>
 </macro>
@@ -70,11 +74,11 @@
 <sort>
 <key variable="citation-number"/>
 </sort>
-<layout prefix="[" suffix="]" delimiter=",">
+<layout vertical-align="sup" delimiter="," prefix="[" suffix="]">
 <text variable="citation-number"/>
 </layout>
 </citation>
-<bibliography second-field-align="flush" et-al-min="3" et-al-use-first="4">
+<bibliography second-field-align="flush" et-al-min="99" et-al-use-first="98">
 <layout>
 <text variable="citation-number" prefix="[" suffix="]"/>
 <group delimiter=" " prefix=" ">
@@ -113,7 +117,7 @@
 <else>
 <group prefix=" ">
 <text macro="editor"/>
-<text variable="container-title" font-style="normal" suffix="[J], "/>
+<text variable="container-title" font-style="normal" suffix=", "/>
 <date variable="issued" suffix=", ">
 <date-part name="year"/>
 </date>
