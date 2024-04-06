@@ -78,7 +78,7 @@
 <text variable="citation-number"/>
 </layout>
 </citation>
-<bibliography second-field-align="flush" et-al-min="99" et-al-use-first="98">
+<bibliography second-field-align="flush" et-al-min="3" et-al-use-first="3">
 <layout>
 <text variable="citation-number" prefix="[" suffix="]"/>
 <group delimiter=" " prefix=" ">
